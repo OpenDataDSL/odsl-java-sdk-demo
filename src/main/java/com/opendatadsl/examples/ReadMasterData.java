@@ -1,6 +1,7 @@
 package com.opendatadsl.examples;
 
 import com.walkfares.odsl.var.Var;
+import com.walkfares.odsl.var.basic.VarDynamicObject;
 
 import sdk.ODSL;
 
@@ -11,7 +12,8 @@ public class ReadMasterData {
         odsl.login();
 
 		Var var = odsl.get("object", "private", "ICE.EL.NLB");
-		System.out.println(var);
+        VarDynamicObject vdo = (VarDynamicObject) var;
+		System.out.println(vdo.getProperties());
     }
 	
 }
