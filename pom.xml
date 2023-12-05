@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
-        <opendsl.version>1.0.28-SNAPSHOT</opendsl.version>
+        <opendsl.version>1.0.29-SNAPSHOT</opendsl.version>
     </properties>
 
     <dependencies>
