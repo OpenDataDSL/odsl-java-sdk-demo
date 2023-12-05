@@ -22,4 +22,25 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>odsl-maven-snapshot-repo</id>
+            <url>bs://odslmaven/snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>odsl-maven-release-repo</id>
+            <url>bs://odslmaven/release</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>com.gkatzioura.maven.cloud</groupId>
+                <artifactId>azure-storage-wagon</artifactId>
+                <version>1.8</version>
+            </extension>            
+        </extensions>
+    </build>
+
 </project>
