@@ -6,7 +6,6 @@ import sdk.RTD;
 public class CurveManagementExample {
 	public static void main(String[] args) {
         ODSL odsl = new ODSL();
-        odsl.setStage("local");
         odsl.login();
 
 		RTD rtd = odsl.RTD();

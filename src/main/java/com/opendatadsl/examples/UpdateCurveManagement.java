@@ -1,12 +1,11 @@
 package com.opendatadsl.examples;
 
-import com.walkfares.odsl.var.basic.VarSimpleObject;
+import com.opendatadsl.odsl.var.basic.VarSimpleObject;
 import sdk.ODSL;
 
 public class UpdateCurveManagement {
 		public static void main(String[] args) {
         ODSL odsl = new ODSL();
-        odsl.setStage("local");
         odsl.login();
 
 		// Update the export status for a curve build

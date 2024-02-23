@@ -1,10 +1,10 @@
 package com.opendatadsl.examples;
 
-import com.walkfares.calendar.UTCDate;
-import com.walkfares.odsl.var.VarExpiryCalendar;
-import com.walkfares.odsl.var.basic.VarDynamicObject;
-import com.walkfares.odsl.var.curve.VarCurve;
-import com.walkfares.odsl.var.curve.VarCurveDate;
+import com.opendatadsl.calendar.UTCDate;
+import com.opendatadsl.odsl.var.VarExpiryCalendar;
+import com.opendatadsl.odsl.var.basic.VarDynamicObject;
+import com.opendatadsl.odsl.var.curve.VarCurve;
+import com.opendatadsl.odsl.var.curve.VarCurveDate;
 
 import sdk.CurveBuildLog;
 import sdk.CurveManager;
@@ -14,7 +14,6 @@ public class UpdateCurve {
 	public static void main(String[] args) {
 		// Log in
         ODSL odsl = new ODSL();
-        odsl.setStage("local");
         odsl.login();
 
 		// Get the curve manager and create a build log

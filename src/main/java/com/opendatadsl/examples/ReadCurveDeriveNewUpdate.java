@@ -1,15 +1,14 @@
 package com.opendatadsl.examples;
 
-import com.walkfares.function.CurveFunctions;
-import com.walkfares.odsl.var.basic.VarDynamicObject;
-import com.walkfares.odsl.var.curve.VarCurve;
+import com.opendatadsl.function.CurveFunctions;
+import com.opendatadsl.odsl.var.basic.VarDynamicObject;
+import com.opendatadsl.odsl.var.curve.VarCurve;
 
 import sdk.ODSL;
 
 public class ReadCurveDeriveNewUpdate {
     public static void main(String[] args) {
         ODSL odsl = new ODSL();
-        odsl.setStage("local");
         odsl.login();
 
 		// Read ICE Settle curve
